@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 import hashlib
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////home/rahul/Downloads/database.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://neondb_owner:cmlr9wLN2RoD@ep-delicate-wildflower-a5f5us67.us-east-2.aws.neon.tech/neondb?sslmode=require'
 db = SQLAlchemy(app)
 
 app.secret_key = "super secret key"
